@@ -54,7 +54,7 @@
                   "maximumError": "1 MB"
                 },
                 {
-                  "type": "allStyles",
+                  "type": "all",
                   "maximumWarning": "500 KB",
                   "maximumError": "1 MB"
                 }
