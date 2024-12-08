@@ -43,14 +43,9 @@
               },
               "budgets": [
                 {
-                  "type": "initial",
-                  "maximumWarning": "500 KB",
-                  "maximumError": "1 MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2 KB",
-                  "maximumError": "4 KB"
+                  "type": "all",
+                  "maximumWarning": "100 KB",
+                  "maximumError": "200 KB"
                 },
                 {
                   "type": "allScript",
@@ -58,9 +53,9 @@
                   "maximumError": "1 MB"
                 },
                 {
-                  "type": "all",
-                  "maximumWarning": "500 KB",
-                  "maximumError": "1 MB"
+                  "type": "allStyles",
+                  "maximumWarning": "100 KB",
+                  "maximumError": "200 KB"
                 }
               ],
               "fileReplacements": [

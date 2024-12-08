@@ -1,7 +1,15 @@
-/* Importa los estilos de FontAwesome */
-@import "~@fortawesome/fontawesome-free/css/all.min.css"
+/* Importa los iconos de FontAwesome necesarios */
+@import "~@fortawesome/fontawesome-free/css/fontawesome.min.css"
+@import "~@fortawesome/fontawesome-free/css/brands.min.css" // Solo si es necesario
 
-/* Estilos globales o base */
+/* Variables para los colores */
+$btn-hover-color: #128c7e
+$btn-hover-instagram: #e1306c
+$btn-hover-whatsapp: #25d366
+$btn-hover-tiktok: #000
+$btn-bg-color: #00adb5
+
+/* Estilos globales */
 body
   font-family: Arial, sans-serif
   margin: 0
@@ -19,30 +27,30 @@ body
   display: block
   margin: 10px 0
   padding: 15px
-  border-radius: 40%
+  border-radius: 50% // Redondear más el botón
   font-size: 24px
   color: white
   text-align: center
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
-  transition: background-color 0.3s
+  transition: background-color 0.3s ease
 
-.floating-button:hover
-  background-color: #128c7e
+  &:hover
+    background-color: $btn-hover-color
 
-.floating-button.instagram
-  background-color: #00adb5
+  &.instagram
+    background-color: $btn-bg-color
 
-.floating-button.instagram:hover
-  background-color: #e1306c
+    &:hover
+      background-color: $btn-hover-instagram
 
-.floating-button.whatsapp
-  background-color: #00adb5
+  &.whatsapp
+    background-color: $btn-bg-color
 
-.floating-button.whatsapp:hover
-  background-color: #25d366
+    &:hover
+      background-color: $btn-hover-whatsapp
 
-.floating-button.tiktok
-  background-color: #00adb5
+  &.tiktok
+    background-color: $btn-bg-color
 
-.floating-button.tiktok:hover
-  background-color: #000
+    &:hover
+      background-color: $btn-hover-tiktok
