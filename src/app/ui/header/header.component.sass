@@ -1,0 +1,85 @@
+nav
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 1rem
+  background-color: #f8f9fa
+
+  .nav-link
+    text-decoration: none
+    color: #007bff
+    margin-right: 1rem
+
+    &:hover
+      text-decoration: underline
+
+    img
+      width: 60px
+      height: 60px
+
+  .navigation
+    display: flex
+    list-style: none
+    padding: 0
+    margin: 0
+
+    li
+      margin-right: 1rem
+
+      .nav-link
+        &.desarrollador
+          color: #28a745
+
+  .burger-menu
+    display: none
+    background: none
+    border: none
+    font-size: 1.5rem
+
+    .bars
+      font-size: 2rem
+
+@media (max-width: 768px)
+  nav
+    flex-direction: column
+
+    .navigation
+      flex-direction: column
+      align-items: center
+
+      li
+        margin: 0.5rem 0
+
+    .burger-menu
+      display: block
+
+.menu-horizontal
+  background-color: #00adb5
+  overflow: hidden
+
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    display: flex
+
+    li
+      a
+        display: block
+        color: white
+        text-align: center
+        padding: 14px 16px
+        text-decoration: none
+
+        &:hover
+          background-color: #0c3e5b
+
+
+.carousel
+
+      width: 80%
+      margin-left: 18%
+      img
+        width: 80%
+        height: 350px
+        

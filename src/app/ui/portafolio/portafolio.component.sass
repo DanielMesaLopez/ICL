@@ -1,0 +1,332 @@
+// Estilos generales
+.container
+  max-width: 1200px
+  margin: 40px auto
+  text-align: center
+
+h1
+  font-size: 36px
+  margin-bottom: 20px
+
+  span
+    color: #333
+    font-weight: bold
+
+.card
+  width: 18rem
+  height: 100%
+  border: 1px solid #ddd
+  border-radius: 10px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  transition: transform 0.5s
+
+.card-img-top
+  width: 100%
+  height: 150px
+  object-fit: cover
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px
+
+// All elements border-box
+*
+  box-sizing: border-box
+  &::before, &::after
+    box-sizing: border-box
+
+// Root element font size
+// No default margins and paddings
+html, body
+  font-size: 16px
+  margin: 0
+  padding: 0
+
+html, body
+  display: block
+
+// Body main style
+body
+  line-height: 1.317101995
+  scroll-behavior: smooth
+  font-family: sans-serif
+  background-color: #0c3e5b
+  color: #0c3e5b
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 32px 0
+
+button:focus
+  outline: 0
+
+img, embed, svg, audio, canvas, iframe, video
+  max-width: 100%
+  height: auto
+  vertical-align: middle
+
+hr
+  height: 0
+  border: 0
+  border-bottom: 1px solid #dfdfdf
+  margin: 0
+
+h1
+  font-size: 4rem
+  margin-top: 0
+  margin-bottom: 80px
+  span
+    color: #0c3e5b
+
+p
+  margin: 0
+
+.cards-grid
+  display: flex
+  grid-gap: 80px
+  padding-bottom: 60px
+
+// FLIP CARD
+.flip-card
+  perspective: 1000px
+  width: 250px
+  height: 350px
+
+  &-inner
+    position: relative
+    width: 100%
+    height: 100%
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2)
+    border-radius: 28px
+    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13)
+    transform-style: preserve-3d
+
+  &-front, &-back
+    position: absolute
+    width: 100%
+    height: 100%
+    border-radius: 28px
+    backface-visibility: hidden
+
+  &-front
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+  &-back
+    font-size: 1.25rem
+    text-align: center
+    display: grid
+    place-items: center
+    padding: 2px
+    background-color: #B1CFC8
+    transform: rotateY(180deg)
+
+  &:hover &-inner
+    transform: rotateY(-180deg)
+
+.flip-card-inner
+  position: relative
+  width: 100%
+  height: 100%
+  text-align: center
+  transition: transform 0.8s
+  transform-style: preserve-3d
+
+.flip-card:hover .flip-card-inner
+  transform: rotateY(180deg)
+
+.flip-card-front, .flip-card-back
+  position: absolute
+  width: 100%
+  height: 100%
+  backface-visibility: hidden
+
+.flip-card-front
+  background-color: #bbb
+  color: black
+  background-size: cover
+
+.flip-card-back
+  background-color: #00adb5
+  color: white
+  transform: rotateY(180deg)
+
+.contenido
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  padding: 20px
+  background-color: white
+  border-radius: 10px
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+
+  .image-container
+    flex: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 20px
+
+  .image
+    width: 100%
+    max-width: 300px
+    height: auto
+    border-radius: 10px
+
+  .accordion
+    flex: 2
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    button
+      display: block
+      width: 80%
+      padding: 15px
+      margin: 10px 0
+      background-color: #0c3e5b
+      color: white
+      border: none
+      cursor: pointer
+      text-align: center
+      font-size: 18px
+      border-radius: 5px
+      transition: background-color 0.3s
+
+      &:hover
+        background-color: #00adb5
+
+    .content
+      display: none
+      width: 80%
+      padding: 15px
+      background-color: white
+      margin: 10px 0
+      border-radius: 5px
+
+    .content.active
+      display: block
+
+    carousel
+      width: 100%
+
+      img
+        width: 100%
+        height: auto
+        border-radius: 5px
+
+.cards-grid
+  display: flex
+  justify-content: center
+  align-items: center
+
+.flip-card
+  display: flex
+  justify-content: center
+  align-items: center
+
+.flip-card-front
+  width: 100%
+  height: 100%
+  background-size: cover
+  background-position: center
+
+.custom-list
+  list-style-type: none
+  text-align: justify
+  padding: 0
+
+.custom-list li::before
+  content: '•'
+  color: black
+  display: inline-block
+  width: 1em
+  margin-left: -1em
+
+.text-container
+  text-align: center
+  margin-top: -20px
+
+.centered-text
+  font-size: 1.5em
+  font-weight: bold
+
+.centered-subtext
+  font-size: 1em
+  color: gray
+  margin-top: 5px
+
+//colapsar
+
+.collapse-container-uno,
+.collapse-container-dos,
+.collapse-container-tres,
+.collapse-container-cuatro
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 20px
+
+  .collapse-button 
+    background-color: #007bff
+    color: white
+    border: none
+    padding: 10px 20px
+    cursor: pointer
+    border-radius: 50px
+    margin-bottom: 10px  
+
+  .collapse-content 
+    overflow: hidden
+    transition: max-height 0.3s ease-out
+    max-height: 0
+    opacity: 0
+
+    &.collapsed 
+      max-height: 100px
+      opacity: 1
+
+.image-contenido
+  flex: 1
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-right: 20px
+
+.imagen
+    width: 100%
+    max-width: 1000px
+    height: auto
+    border-radius: 10px
+
+// Media Queries para Responsividad
+ @media screen and (max-width: 768px)
+    .flip-card
+      width: 100%
+      height: auto
+
+    .cards-grid
+      flex-direction: column
+      gap: 20px
+
+    h1
+      font-size: 30px
+
+    .flip-card-inner
+      transition: transform 0.3s ease
+
+@media screen and (max-width: 480px)
+  .cards-grid
+      flex-direction: column
+      gap: 20px
+
+  .accordion button
+    padding: 12px
+    font-size: 16px
+
+  .flip-card
+    width: 100%
+    height: 300px
+    margin-bottom: 20px

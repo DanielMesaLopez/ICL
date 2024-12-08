@@ -1,0 +1,119 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css"
+footer
+  background-color: #0c3e5b
+  color: #fff
+  padding: 2rem 0
+  transform: translateY(40px)
+
+  .footer-content
+    display: flex
+    justify-content: space-around
+    padding: 1rem 0
+    flex-wrap: wrap  // Permite que las secciones se apilen en pantallas pequeñas
+
+    .footer-section
+      flex: 1
+      padding: 0 1rem
+      margin-bottom: 1rem  // Añadir espacio entre las secciones
+
+      h2
+        font-size: 1.5rem
+        margin-bottom: 1rem
+
+      p, a
+        font-size: 1rem
+        color: #fff
+        text-decoration: none
+        line-height: 1.5  // Mejorar la legibilidad del texto
+
+        &:hover
+          text-decoration: underline
+
+      ul
+        list-style: none
+        padding: 0
+
+        li
+          margin-bottom: 0.5rem
+
+          a
+            color: #fff
+
+            &:hover
+              text-decoration: underline
+
+  .footer-bottom
+    text-align: center
+    padding: 1rem 0
+    border-top: 1px solid #444
+    font-size: 0.9rem
+
+// Estilos específicos para la imagen del logo
+.footer-logo
+  width: 150px  // Tamaño más grande del logo
+  height: auto
+  margin: 0 auto  // Centra la imagen en su contenedor
+  display: block  // Hace que la imagen sea un bloque para que funcione 'margin: 0 auto'
+  margin-bottom: 20px // Espacio debajo del logo
+  transform: translateY(-10px) // Mover el logo un poco hacia arriba
+
+ 
+
+// Estilos para los iconos de redes sociales
+.social-icons
+  display: flex
+  gap: 1rem
+  justify-content: flex-start  // Alinea los iconos a la izquierda de la sección
+  align-items: center  // Alinea verticalmente los iconos con el texto
+  padding: 0
+  margin-top: 10px  // Ajusta un poco la distancia entre el texto y los iconos
+
+  li
+    list-style: none
+
+  a
+    font-size: 1.5rem
+    color: #fff
+    transition: transform 0.3s ease
+
+    &:hover
+      transform: scale(1.1)
+
+
+  // Media query para hacer el pie de página responsivo
+  @media (max-width: 768px)
+    footer
+      padding: 1.5rem 0 1rem 0  // Reducir el padding en móviles
+
+    .footer-content
+      flex-direction: column
+      align-items: center  // Alinear el contenido verticalmente
+      padding: 0 1rem  // Añadir algo de padding lateral en pantallas pequeñas
+
+    .footer-section
+      padding: 0.5rem  // Reducir el padding de las secciones en pantallas pequeñas
+      text-align: center  // Centrar el texto en pantallas pequeñas
+
+      h2
+        font-size: 1.25rem  // Reducir tamaño de los títulos en móviles
+
+      p, a
+        font-size: 0.9rem  // Reducir el tamaño del texto
+        line-height: 1.4  // Mejorar la legibilidad en pantallas pequeñas
+
+    .footer-bottom
+      font-size: 0.8rem  // Reducir tamaño de fuente del pie de página en móviles
+
+  // Media query para pantallas muy pequeñas (móviles pequeños)
+  @media (max-width: 480px)
+    .footer-logo
+      width: 90px  // Hacer el logo aún más pequeño en pantallas pequeñas
+
+    .footer-content
+      padding: 1rem 0 0.5rem 0  // Reducir el padding superior en pantallas muy pequeñas
+
+    .footer-section
+      padding: 0.25rem  // Reducir más el padding de las secciones
+
+    .footer-bottom
+      font-size: 0.75rem  // Reducir el tamaño de fuente en pantallas muy pequeñas

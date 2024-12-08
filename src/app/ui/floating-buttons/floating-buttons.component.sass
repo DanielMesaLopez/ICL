@@ -1,0 +1,48 @@
+/* Importa los estilos de FontAwesome */
+@import "~@fortawesome/fontawesome-free/css/all.min.css"
+
+/* Estilos globales o base */
+body
+  font-family: Arial, sans-serif
+  margin: 0
+  padding: 0
+
+/* Estilo para los botones flotantes */
+.floating-buttons
+  position: fixed
+  right: 10px
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 9999
+
+.floating-button
+  display: block
+  margin: 10px 0
+  padding: 15px
+  border-radius: 40%
+  font-size: 24px
+  color: white
+  text-align: center
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+  transition: background-color 0.3s
+
+.floating-button:hover
+  background-color: #128c7e
+
+.floating-button.instagram
+  background-color: #00adb5
+
+.floating-button.instagram:hover
+  background-color: #e1306c
+
+.floating-button.whatsapp
+  background-color: #00adb5
+
+.floating-button.whatsapp:hover
+  background-color: #25d366
+
+.floating-button.tiktok
+  background-color: #00adb5
+
+.floating-button.tiktok:hover
+  background-color: #000

@@ -1,0 +1,278 @@
+<section id="Soluciones">
+  <div class="container">
+    <h1><span>Soluciones a tu alcance </span></h1>
+    <div class="cards-grid">
+      <div class="flip-card">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.ibb.co/4pw8Fgs/writing-address-box-1098-21122.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>PAQUETES</h5>
+            <p class="card-text">
+              Llevamos tus paquetes de manera rápida y segura a su destino,
+              desde o hacia Colombia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.ibb.co/18cp4dn/still-life-documents-stack-23-2151088805.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>DOCUMENTOS</h5>
+            <p class="card-text">
+              Transportamos tus documentos tales como diplomas, partidas de
+              bautizo o matrimonio, archivos contables, licencias, etc.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.ibb.co/WGHYPhR/worker-unloading-package-boxes-out-inside-cargo-container-warehouse-logistics-transport-36860-1114.jpg
+          "
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>CARGA</h5>
+            <p class="card-text">
+              Ofrecemos una logística integral para el transporte de tu carga
+              aérea desde o hacia Colombia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Explora">
+  <div class="container">
+    <h1><span>Explora nuestros servicios </span></h1>
+    <div class="cards-grid">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div
+            class="flip-card-front"
+            style="
+              background-image: url('https://i.ibb.co/L65SqDt/full-shot-delivery-people-holding-box-23-2149103414.jpg');
+            "
+          ></div>
+          <div class="flip-card-back">
+            Logística integral de transporte aéreo desde y hacia Colombia.
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div
+            class="flip-card-front"
+            style="
+              background-image: url('https://i.ibb.co/190zvpX/close-up-women-working-with-laptop-23-2149300684.jpg');
+            "
+          ></div>
+          <div class="flip-card-back">
+            Asesoría personalizada sobre el manejo de aduanas para tus envíos.
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div
+            class="flip-card-front"
+            style="
+              background-image: url('https://i.ibb.co/W3TVGmq/serious-woman-reading-contract-1098-17690.jpg');
+            "
+          ></div>
+          <div class="flip-card-back">
+            Gestión documental para cada uno de tus despachos.
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div
+            class="flip-card-front"
+            style="
+              background-image: url('https://i.ibb.co/8M6Zmq3/top-view-hand-holding-american-flags-23-2148491561.jpg');
+            "
+          ></div>
+          <div class="flip-card-back">
+            Casillero Internacional para traer tus compras de Estados Unidos a
+            Colombia.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="QuienesSomos">
+  <div class="contenido">
+    <div class="image-container">
+      <img
+        src="https://i.ibb.co/BPymXN1/foto-uno-i-1.png"
+        alt="Imagen de mujer"
+        class="image"
+      />
+    </div>
+
+    <div class="accordion">
+      <button (click)="toggleSection('section1')">Detrás de INCALOG</button>
+      <div [ngClass]="{ content: true, active: activeSection === 'section1' }">
+        <div class="cards-grid">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div
+                class="flip-card-front"
+                style="
+                  background-image: url('https://i.ibb.co/5218wC5/CGL.jpg');
+                "
+              ></div>
+              <div class="flip-card-back">
+                <ul class="custom-list">
+                  <li>Profesional en Negocios Internacionales.</li>
+                  <li>
+                    Más de 10 años de experiencia en Comercio Internacional.
+                  </li>
+                  <li>
+                    Experta en asesoría enfocada en la internacionalización de
+                    productos colombianos en el exterior.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-container">
+          <h2 class="centered-text">Carolina González</h2>
+          <p class="centered-subtext">CEO DE INCALOG</p>
+        </div>
+      </div>
+
+      <button (click)="toggleSection('section2')">Recomendaciones</button>
+      <div [ngClass]="{ content: true, active: activeSection === 'section2' }">
+        <carousel>
+          <slide>
+            <img
+              src="https://i.ibb.co/X7DQ2qX/cold-smooth-tasty-4.jpg"
+              alt="Imagen 1"
+            />
+          </slide>
+          <slide>
+            <img
+              src="https://i.ibb.co/ZhfvHxw/cold-smooth-tasty-3.jpg"
+              alt="Imagen 2"
+            />
+          </slide>
+          <slide>
+            <img
+              src="https://i.ibb.co/pWRg7RY/cold-smooth-tasty-8.jpg"
+              alt="Imagen 3"
+            />
+          </slide>
+          <slide>
+            <img
+              src="https://i.ibb.co/8KhpSZ6/cold-smooth-tasty-9.jpg"
+              alt="Imagen 4"
+            />
+          </slide>
+        </carousel>
+      </div>
+
+      <button (click)="toggleSection('section3')">Preguntas frecuentes</button>
+      <div [ngClass]="{ content: true, active: activeSection === 'section3' }">
+        <div class="collapse-container-uno">
+          <button (click)="toggleContent('uno')" class="collapse-button">
+            {{
+              isCollapsedUno
+                ? "¿Puedo hacer un envío internacional sin estar registrado como exportador?"
+                : "¿Puedo hacer un envío internacional sin estar registrado como exportador?"
+            }}
+          </button>
+          <div [class.collapsed]="isCollapsedUno" class="collapse-content">
+            <p>
+              ¡Claro que sí! Bajo la modalidad de courier o envío urgente puedes
+              hacer tu envío internacional por vía aérea como persona natural o
+              jurídica teniendo en cuenta la regulación aduanera del país de
+              destino.
+            </p>
+          </div>
+        </div>
+        <div class="collapse-container-dos">
+          <button (click)="toggleContent('dos')" class="collapse-button">
+            {{
+              isCollapsedDos
+                ? "¿El envío de licencias de conducción o cédulas a otro país requieren algún permiso especial?"
+                : "¿El envío de licencias de conducción o cédulas a otro país requieren algún permiso especial?"
+            }}
+          </button>
+          <div [class.collapsed]="isCollapsedDos" class="collapse-content">
+            <p>
+              ¡Para nada! Puedes hacer el envío de este tipo de documentos sin
+              problema. También puedes enviar diplomas, partidas de bautizo o
+              matrimonio, archivos contables, etc.
+            </p>
+          </div>
+        </div>
+        <div class="collapse-container-tres">
+          <button (click)="toggleContent('tres')" class="collapse-button">
+            {{
+              isCollapsedTres
+                ? "¿Debo contar con factura de venta original para el envío de mis paquetes a otro país?"
+                : "¿Debo contar con factura de venta original para el envío de mis paquetes a otro país?"
+            }}
+          </button>
+          <div [class.collapsed]="isCollapsedTres" class="collapse-content">
+            <p>
+              No es necesario. En INCARLOG nos encargamos de elaborar la factura
+              comercial con todas las especificaciones requeridas para efectos
+              de aduana de tus envíos para lo cual nos debes proporcionar
+              descripción detallada, valor unitario y valor total del contenido.
+            </p>
+          </div>
+        </div>
+        <div class="collapse-container-cuatro">
+          <button (click)="toggleContent('cuatro')" class="collapse-button">
+            {{
+              isCollapsedTres
+                ? "¿Es posible enviar maletas a otro país con mis efectos personales?"
+                : "¿Es posible enviar maletas a otro país con mis efectos personales?"
+            }}
+          </button>
+          <div [class.collapsed]="isCollapsedCuatro" class="collapse-content">
+            <p>
+              ¡Si es posible! El envío de maletas se maneja como equipaje no
+              acompañado para lo cual debes contar con copia de los tiquetes o
+              de la reserva de vuelo con fecha de vigencia no mayor a 2 meses y
+              del pasaporte del propietario de la maleta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="MediosPago">
+  <div class="container">
+    <div class="image-contenido">
+      <img
+        src="/./assets/mediospago/mediospago.jpeg"
+        alt="Medios de pago"
+        class="imagen"
+      />
+    </div>
+  </div>
+</section>
+<!-- Agregar los botones flotantes en tu componente -->
+<app-floating-buttons></app-floating-buttons>
