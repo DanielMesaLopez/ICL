@@ -233,17 +233,37 @@ p
   background-size: cover
   background-position: center
 
-.custom-list
-  list-style-type: none
-  text-align: justify
-  padding: 0
+/* Estilo para la tarjeta trasera */
+.flip-card-back
+  padding: 10px  /* Agregar padding para evitar que el texto quede pegado a los bordes */
+  text-align: justify  /* Justifica el texto para que tenga una distribución más ordenada */
+  font-size: 1.2em  /* Tamaño de texto más pequeño en la parte posterior */
+  line-height: 1.5  /* Espaciado entre líneas para que el texto sea más legible */
+  direction: ltr  /* Asegura que el texto esté en la dirección correcta */
+  overflow: hidden  /* Evita que el texto se desborde */
 
-.custom-list li::before
-  content: '•'
-  color: black
-  display: inline-block
-  width: 1em
-  margin-left: -1em
+/* Personalización de la lista en la parte posterior de la tarjeta */
+.custom-list
+  list-style-type: none  /* Elimina los puntos predeterminados de la lista */
+  margin: 0  /* Elimina márgenes */
+  padding: 0  /* Elimina padding que podría afectar el tamaño */
+  word-wrap: break-word  /* Permite que las palabras largas se ajusten en pantallas pequeñas */
+
+/* Ajuste para cada ítem de la lista */
+.custom-list li
+  margin-bottom: 10px  /* Espaciado entre los elementos de la lista */
+  font-size: 0.9em  /* Ajusta el tamaño de la fuente de los elementos de la lista */
+
+/* En pantallas móviles, se puede ajustar más si es necesario */
+@media (max-width: 768px)
+  .flip-card-back
+    font-size: 0.8em  /* Tamaño de texto aún más pequeño en pantallas móviles */
+    padding: 15px  /* Añadir padding extra para que el texto no quede pegado al borde */
+
+  .custom-list li
+    font-size: 0.8em  /* Ajusta el tamaño de la fuente en dispositivos pequeños */
+
+
 
 .text-container
   text-align: center
@@ -330,3 +350,48 @@ p
     width: 100%
     height: 300px
     margin-bottom: 20px
+  
+/* Estilos para el botón que solo se muestra en móviles */
+.flip-btn 
+  display: none /* Inicialmente oculto */
+  position: absolute
+  bottom: 10px
+  left: 50%
+  transform: translateX(-50%)
+  padding: 10px 20px
+  background-color: #00adb5
+  color: white
+  border: none
+  font-size: 16px
+  border-radius: 5px
+  cursor: pointer
+
+/* Mostrar el botón solo en pantallas pequeñas */
+@media (max-width: 768px) 
+  .flip-btn 
+    display: block /* Mostrar el botón en pantallas pequeñas */
+
+/* Estilos para el botón que solo se muestra en móviles */
+.flip-btns 
+  display: none /* Inicialmente oculto */
+  position: absolute
+  bottom: -80px
+  left: 50%
+  transform: translateX(-50%)
+  padding: 10px 20px
+  background-color: #007bff
+  color: white
+  border: none
+  font-size: 16px
+  border-radius: 5px
+  cursor: pointer
+
+
+/* Mostrar el botón solo en pantallas pequeñas */
+@media (max-width: 768px) 
+  .flip-btns 
+    display: block /* Mostrar el botón en pantallas pequeñas */
+  
+
+
+  

@@ -1,3 +1,10 @@
+<head>
+  <!-- Incluir Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
 <section id="Soluciones">
   <div class="container">
     <h1><span>Soluciones a tu alcance </span></h1>
@@ -54,9 +61,9 @@
 
 <section id="Explora">
   <div class="container">
-    <h1><span>Explora nuestros servicios </span></h1>
+    <h1><span>Explora nuestros servicios</span></h1>
     <div class="cards-grid">
-      <div class="flip-card">
+      <div class="flip-card" [ngClass]="{ 'flip-card-active': flipCardOne }">
         <div class="flip-card-inner">
           <div
             class="flip-card-front"
@@ -68,9 +75,13 @@
             Logística integral de transporte aéreo desde y hacia Colombia.
           </div>
         </div>
+        <!-- Botón de voltear en dispositivos móviles -->
+        <button class="flip-btn" (click)="flipCard(1)">
+          Ver <i class="fa fa-eye"></i>
+        </button>
       </div>
 
-      <div class="flip-card">
+      <div class="flip-card" [ngClass]="{ 'flip-card-active': flipCardTwo }">
         <div class="flip-card-inner">
           <div
             class="flip-card-front"
@@ -82,9 +93,13 @@
             Asesoría personalizada sobre el manejo de aduanas para tus envíos.
           </div>
         </div>
+        <!-- Botón de voltear en dispositivos móviles -->
+        <button class="flip-btn" (click)="flipCard(2)">
+          Ver <i class="fa fa-eye"></i>
+        </button>
       </div>
 
-      <div class="flip-card">
+      <div class="flip-card" [ngClass]="{ 'flip-card-active': flipCardThree }">
         <div class="flip-card-inner">
           <div
             class="flip-card-front"
@@ -96,9 +111,13 @@
             Gestión documental para cada uno de tus despachos.
           </div>
         </div>
+        <!-- Botón de voltear en dispositivos móviles -->
+        <button class="flip-btn" (click)="flipCard(3)">
+          Ver <i class="fa fa-eye"></i>
+        </button>
       </div>
 
-      <div class="flip-card">
+      <div class="flip-card" [ngClass]="{ 'flip-card-active': flipCardFour }">
         <div class="flip-card-inner">
           <div
             class="flip-card-front"
@@ -111,6 +130,10 @@
             Colombia.
           </div>
         </div>
+        <!-- Botón de voltear en dispositivos móviles -->
+        <button class="flip-btn" (click)="flipCard(4)">
+          Ver <i class="fa fa-eye"></i>
+        </button>
       </div>
     </div>
   </div>
@@ -130,7 +153,10 @@
       <button (click)="toggleSection('section1')">Detrás de INCALOG</button>
       <div [ngClass]="{ content: true, active: activeSection === 'section1' }">
         <div class="cards-grid">
-          <div class="flip-card">
+          <div
+            class="flip-card"
+            [ngClass]="{ 'flip-card-active': flipCardOne }"
+          >
             <div class="flip-card-inner">
               <div
                 class="flip-card-front"
@@ -151,8 +177,14 @@
                 </ul>
               </div>
             </div>
+
+            <!-- Botón de voltear en dispositivos móviles con texto 'Ver' y un icono de ojo -->
+            <button class="flip-btns" (click)="flipCardAC(1)">
+              Ver <i class="fa fa-eye"></i>
+            </button>
           </div>
         </div>
+        <br /><br />
         <div class="text-container">
           <h2 class="centered-text">Carolina González</h2>
           <p class="centered-subtext">CEO DE INCALOG</p>
